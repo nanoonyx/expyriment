@@ -421,6 +421,7 @@ class Visual(Stimulus):
         if self.has_surface:
             surface_backup = self._get_surface().copy()
             surface_copy = self._get_surface().copy()
+            self._surface = None
         rtn = Stimulus.copy(self)
         if self.has_surface:
             self._surface = surface_backup
